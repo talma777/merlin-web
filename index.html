@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merlin RegTech — Compliance Normativo con IA para Entidades Financieras</title>
+  <meta name="description" content="Merlin convierte un expediente documental en un dictamen operativo regulatorio en minutos. KYC/KYB automatizado, trazable y auditable. Basado en normativa UIF, BCRA y GAFI." />
+  <meta property="og:title" content="Merlin RegTech — Compliance con IA" />
+  <meta property="og:description" content="Del expediente al dictamen en minutos. La plataforma RegTech diseñada para el mercado argentino." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://merlin.com.ar" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAV ═══ -->
+  <nav id="nav" class="nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <span class="logo-icon">🔮</span>
+        <span class="logo-text">Merlin</span>
+        <span class="logo-badge">RegTech</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#modulos">Módulos</a></li>
+        <li><a href="#normativa">Normativa</a></li>
+        <li><a href="#para-quien">Para quién</a></li>
+      </ul>
+      <a href="#acceso" class="btn btn-primary nav-cta">Solicitar Demo</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ HERO ════ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-mesh"></div>
+      <div class="hero-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badges reveal">
+        <span class="badge badge-outline">🇦🇷 Mercado Argentino</span>
+        <span class="badge badge-outline">🛡️ UIF · BCRA · GAFI · ARCA</span>
+        <span class="badge badge-glow">Acceso Anticipado Disponible</span>
+      </div>
+      <h1 class="hero-headline reveal reveal-delay-1">
+        Del expediente<br />
+        <span class="gradient-text">al dictamen en minutos.</span>
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        Merlin es la plataforma RegTech con IA que automatiza el proceso de compliance KYC/KYB 
+        para entidades financieras reguladas en Argentina. <strong>Trazable, auditable</strong> 
+        y con revisión humana en cada decisión crítica.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#acceso" class="btn btn-primary btn-lg">
+          <span>Solicitar Acceso Anticipado</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#como-funciona" class="btn btn-ghost btn-lg">
+          Ver cómo funciona
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+      </div>
+      <div class="hero-mockup reveal reveal-delay-4">
+        <div class="mockup-frame">
+          <div class="mockup-topbar">
+            <div class="mockup-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-url">merlin.com.ar/casos/EXP-2024-0891</div>
+          </div>
+          <div class="mockup-body">
+            <!-- Caso header -->
+            <div class="mock-case-header">
+              <div class="mock-case-info">
+                <div class="mock-case-id">EXP-2024-0891</div>
+                <div class="mock-case-name">FinTech Pagos SA</div>
+                <div class="mock-case-type">Persona Jurídica · PSP regulado</div>
+              </div>
+              <div class="mock-status mock-status-review">EN REVISIÓN</div>
+            </div>
+            <!-- Score widget -->
+            <div class="mock-grid">
+              <div class="mock-card mock-score-card">
+                <div class="mock-card-label">Score de Riesgo</div>
+                <div class="mock-score-ring">
+                  <svg viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#1a2235" stroke-width="10"/>
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#F59E0B" stroke-width="10"
+                      stroke-dasharray="314" stroke-dashoffset="94" stroke-linecap="round"
+                      transform="rotate(-90 60 60)"/>
+                  </svg>
+                  <div class="mock-score-val">
+                    <span class="mock-score-num">72</span>
+                    <span class="mock-score-label">MEDIO</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-card-label">Screening AML</div>
+                <div class="mock-screening-items">
+                  <div class="mock-screening-item ok">
+                    <div class="mock-dot green"></div>
+                    <span>PEP — Sin coincidencias</span>
+                  </div>
+                  <div class="mock-screening-item ok">
+                    <div class="mock-dot green"></div>
+                    <span>OFAC — Sin coincidencias</span>
+                  </div>
+                  <div class="mock-screening-item warn">
+                    <div class="mock-dot amber"></div>
+                    <span>ONU — Revisión manual</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-card-label">Límites Operativos</div>
+                <div class="mock-limits">
+                  <div class="mock-limit-row">
+                    <span>Por operación</span>
+                    <strong>$150.000</strong>
+                  </div>
+                  <div class="mock-limit-row">
+                    <span>Diario</span>
+                    <strong>$500.000</strong>
+                  </div>
+                  <div class="mock-limit-row">
+                    <span>Mensual</span>
+                    <strong>$3.000.000</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Docs checklist -->
+            <div class="mock-card mock-docs">
+              <div class="mock-card-label">Documentación KYB — 5/7 documentos validados</div>
+              <div class="mock-doc-list">
+                <div class="mock-doc-item validated">
+                  <span class="mock-doc-icon">✓</span>
+                  <span>Estatuto Social</span>
+                  <span class="mock-doc-conf">98%</span>
+                </div>
+                <div class="mock-doc-item validated">
+                  <span class="mock-doc-icon">✓</span>
+                  <span>Acta Directorio</span>
+                  <span class="mock-doc-conf">95%</span>
+                </div>
+                <div class="mock-doc-item validated">
+                  <span class="mock-doc-icon">✓</span>
+                  <span>CUIT Constancia</span>
+                  <span class="mock-doc-conf">99%</span>
+                </div>
+                <div class="mock-doc-item pending">
+                  <span class="mock-doc-icon pending-icon">⏳</span>
+                  <span>Balance 2023</span>
+                  <span class="mock-doc-conf pending">Pendiente</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-glow"></div>
+      </div>
+      <div class="hero-stats reveal reveal-delay-5">
+        <div class="stat">
+          <div class="stat-num">< 5 min</div>
+          <div class="stat-label">Por caso completo</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Trazable y auditable</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">40+</div>
+          <div class="stat-label">Reglas UIF/BCRA</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Caja negra. Siempre explicable.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ PROBLEMA ═══ -->
+  <section id="problema" class="section section-problema">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">El problema</span>
+        <h2 class="section-title">El compliance sin tecnología<br />es el cuello de botella de tu operación</h2>
+        <p class="section-sub">Las entidades financieras reguladas enfrentan tres fricciones críticas que ningún proceso manual puede resolver a escala.</p>
+      </div>
+      <div class="problema-grid">
+        <div class="problema-card reveal reveal-delay-1">
+          <div class="problema-icon">⏱</div>
+          <div class="problema-stat">+4 horas</div>
+          <h3>Manual y no escalable</h3>
+          <p>Cada caso de onboarding KYC/KYB consume horas de trabajo analítico sin estandarización. A mayor volumen, mayor riesgo operativo y mayor costo.</p>
+        </div>
+        <div class="problema-card reveal reveal-delay-2">
+          <div class="problema-icon">⚖️</div>
+          <div class="problema-stat">Criterio variable</div>
+          <h3>Inconsistente y no documentado</h3>
+          <p>Sin un motor de reglas, cada decisión depende del analista de turno. Los criterios varían, los argumentos no quedan documentados y la responsabilidad queda difusa.</p>
+        </div>
+        <div class="problema-card reveal reveal-delay-3">
+          <div class="problema-icon">🔍</div>
+          <div class="problema-stat">Riesgo regulatorio</div>
+          <h3>No auditable ante la UIF</h3>
+          <p>La falta de trazabilidad en las decisiones de compliance pone a la entidad en riesgo frente a cualquier inspección. Sin log, sin defensa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ SOLUCIÓN ═══ -->
+  <section id="solucion" class="section section-solucion">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">La solución</span>
+        <h2 class="section-title">Una cadena de valor end-to-end<br />para tu proceso de compliance</h2>
+        <p class="section-sub">Merlin convierte documentos en decisiones regulatorias justificadas, manteniendo al Oficial de Cumplimiento como decisor final en todo momento.</p>
+      </div>
+      <div class="chain-container reveal">
+        <div class="chain-node">
+          <div class="chain-icon">📄</div>
+          <div class="chain-label">Documento</div>
+        </div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node">
+          <div class="chain-icon">🔍</div>
+          <div class="chain-label">Extracción IA</div>
+        </div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node">
+          <div class="chain-icon">👤</div>
+          <div class="chain-label">Perfilamiento</div>
+        </div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node">
+          <div class="chain-icon">⚙️</div>
+          <div class="chain-label">Motor Reglas</div>
+        </div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node">
+          <div class="chain-icon">🛡️</div>
+          <div class="chain-label">Screening AML</div>
+        </div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node">
+          <div class="chain-icon">📊</div>
+          <div class="chain-label">Score + Límites</div>
+        </div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node highlight">
+          <div class="chain-icon">📋</div>
+          <div class="chain-label">Dictamen Auditable</div>
+        </div>
+      </div>
+      <div class="human-loop-banner reveal">
+        <div class="hlb-icon">👁️</div>
+        <div class="hlb-content">
+          <strong>Human-in-the-loop en cada punto crítico</strong>
+          <span>El Oficial de Cumplimiento revisa, corrige y toma la decisión final. La IA acelera el análisis — no lo reemplaza.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ CÓMO FUNCIONA ═══ -->
+  <section id="como-funciona" class="section section-como">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Cómo funciona</span>
+        <h2 class="section-title">Cinco pasos para un dictamen<br />completo y defendible</h2>
+      </div>
+      <div class="stepper">
+        <div class="stepper-nav reveal">
+          <button class="step-btn active" id="step-btn-1" onclick="setStep(1)">
+            <span class="step-num">01</span>
+            <span class="step-name">Crear Expediente</span>
+          </button>
+          <button class="step-btn" id="step-btn-2" onclick="setStep(2)">
+            <span class="step-num">02</span>
+            <span class="step-name">Cargar Documentos</span>
+          </button>
+          <button class="step-btn" id="step-btn-3" onclick="setStep(3)">
+            <span class="step-num">03</span>
+            <span class="step-name">Revisar Extracción</span>
+          </button>
+          <button class="step-btn" id="step-btn-4" onclick="setStep(4)">
+            <span class="step-num">04</span>
+            <span class="step-name">Evaluación Automática</span>
+          </button>
+          <button class="step-btn" id="step-btn-5" onclick="setStep(5)">
+            <span class="step-num">05</span>
+            <span class="step-name">Dictamen Final</span>
+          </button>
+        </div>
+        <div class="stepper-content">
+          <div class="step-panel active" id="step-panel-1">
+            <div class="step-visual">
+              <div class="step-icon-large">📁</div>
+              <div class="step-tags">
+                <span class="tag">Persona Humana</span>
+                <span class="tag">Persona Jurídica</span>
+                <span class="tag">Checklist automático</span>
+              </div>
+            </div>
+            <div class="step-text">
+              <h3>Creá el expediente del cliente</h3>
+              <p>Iniciá un caso para persona humana o jurídica. Merlin genera automáticamente el checklist documental según el tipo de sujeto y la normativa UIF/BCRA aplicable. El expediente queda en estado <code>BORRADOR</code> hasta completar la documentación requerida.</p>
+              <ul class="step-features">
+                <li>✓ Tipos: Persona Humana (PH) y Persona Jurídica (PJ)</li>
+                <li>✓ Checklist documental según normativa vigente</li>
+                <li>✓ Asignación automática al analista responsable</li>
+                <li>✓ Historial de cambios desde el primer momento</li>
+              </ul>
+            </div>
+          </div>
+          <div class="step-panel" id="step-panel-2">
+            <div class="step-visual">
+              <div class="step-icon-large">🤖</div>
+              <div class="step-tags">
+                <span class="tag">OCR + LLM</span>
+                <span class="tag">Confidence Score</span>
+                <span class="tag">Clasificación automática</span>
+              </div>
+            </div>
+            <div class="step-text">
+              <h3>El sistema extrae y estructura la información</h3>
+              <p>Subí los documentos requeridos. Merlin los clasifica por tipo (DNI, constancia AFIP, estatuto, balance, etc.), aplica OCR e IA para extraer los campos clave, y asigna un score de confianza a cada dato extraído.</p>
+              <ul class="step-features">
+                <li>✓ Extracción automática vía Gemini Vision API</li>
+                <li>✓ Score de confianza campo por campo (0-100%)</li>
+                <li>✓ Flags automáticos para campos de baja confianza</li>
+                <li>✓ Detección de inconsistencias entre documentos</li>
+              </ul>
+            </div>
+          </div>
+          <div class="step-panel" id="step-panel-3">
+            <div class="step-visual">
+              <div class="step-icon-large">✏️</div>
+              <div class="step-tags">
+                <span class="tag">Revisión humana</span>
+                <span class="tag">Corrección manual</span>
+                <span class="tag">Historial de cambios</span>
+              </div>
+            </div>
+            <div class="step-text">
+              <h3>El analista valida o corrige los campos</h3>
+              <p>La interfaz presenta todos los campos extraídos con su score de confianza. Los campos con confianza baja se marcan automáticamente para revisión prioritaria. Cada corrección queda registrada con el usuario que la realizó.</p>
+              <ul class="step-features">
+                <li>✓ Vista campo por campo con evidencia documental</li>
+                <li>✓ Corrección inline con justificación</li>
+                <li>✓ Comparación valor extraído vs valor corregido</li>
+                <li>✓ Todo queda en el log de auditoría</li>
+              </ul>
+            </div>
+          </div>
+          <div class="step-panel" id="step-panel-4">
+            <div class="step-visual">
+              <div class="step-icon-large">⚙️</div>
+              <div class="step-tags">
+                <span class="tag">Motor UIF/BCRA</span>
+                <span class="tag">Screening AML</span>
+                <span class="tag">Score trazable</span>
+              </div>
+            </div>
+            <div class="step-text">
+              <h3>Evaluación normativa automática end-to-end</h3>
+              <p>El motor de reglas evalúa el perfil contra 40+ reglas UIF/BCRA. El screening AML verifica contra listas PEP, OFAC y Naciones Unidas. El score de riesgo se calcula con cada factor documentado y justificado.</p>
+              <ul class="step-features">
+                <li>✓ 40+ reglas configurables sin necesidad de deploy</li>
+                <li>✓ Hallazgos con severidad: Info / Warning / Crítico / Bloqueante</li>
+                <li>✓ Screening PEP, OFAC y ONU</li>
+                <li>✓ Score 0-100 con factores positivos y negativos documentados</li>
+              </ul>
+            </div>
+          </div>
+          <div class="step-panel" id="step-panel-5">
+            <div class="step-visual">
+              <div class="step-icon-large">📋</div>
+              <div class="step-tags">
+                <span class="tag">Dictamen operativo</span>
+                <span class="tag">Export PDF</span>
+                <span class="tag">Auditoría inmutable</span>
+              </div>
+            </div>
+            <div class="step-text">
+              <h3>El Oficial emite el dictamen final</h3>
+              <p>El Compliance Officer revisa el dictamen completo: perfil del cliente, hallazgos, score de riesgo y límites operativos sugeridos. Puede aprobar, rechazar, pedir subsanación, o hacer overrides con justificación obligatoria.</p>
+              <ul class="step-features">
+                <li>✓ Dictamen en pantalla + exportación PDF profesional</li>
+                <li>✓ Límites operativos con justificación normativa campo a campo</li>
+                <li>✓ Override de límites con nota obligatoria</li>
+                <li>✓ Log de auditoría inmutable de todo el proceso</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ MÓDULOS ═══ -->
+  <section id="modulos" class="section section-modulos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Plataforma</span>
+        <h2 class="section-title">Nueve módulos especializados.<br />Un flujo integrado.</h2>
+        <p class="section-sub">Cada módulo resuelve una parte específica del proceso de compliance. Juntos forman una cadena completa y auditable.</p>
+      </div>
+      <div class="modulos-grid">
+        <div class="modulo-card reveal">
+          <div class="modulo-icon">📁</div>
+          <h3>Gestión de Expedientes</h3>
+          <p>Estados, checklist documental, transiciones y ciclo de vida completo del caso desde borrador hasta cierre.</p>
+        </div>
+        <div class="modulo-card reveal reveal-delay-1">
+          <div class="modulo-icon">🤖</div>
+          <h3>Extracción Inteligente</h3>
+          <p>OCR + LLM con Gemini Vision. Score de confianza por campo. Corrección manual con trazabilidad completa.</p>
+        </div>
+        <div class="modulo-card reveal reveal-delay-2">
+          <div class="modulo-icon">👤</div>
+          <h3>Perfilamiento KYC/KYB</h3>
+          <p>Perfil consolidado para PH y PJ. Perfil de identidad, actividad económica y patrimonial. Alertas de consistencia.</p>
+        </div>
+        <div class="modulo-card reveal reveal-delay-1">
+          <div class="modulo-icon">⚙️</div>
+          <h3>Motor de Reglas</h3>
+          <p>40+ reglas configurables UIF/BCRA sin deploy. Encendido/apagado por regla. Severidad y peso configurable.</p>
+        </div>
+        <div class="modulo-card reveal reveal-delay-2">
+          <div class="modulo-icon">🛡️</div>
+          <h3>Screening AML</h3>
+          <p>Verificación contra listas PEP, OFAC y Naciones Unidas. Flags por tipologías de riesgo. Resultado impacta score.</p>
+        </div>
+        <div class="modulo-card reveal reveal-delay-3">
+          <div class="modulo-icon">📊</div>
+          <h3>Scoring de Riesgo</h3>
+          <p>Score 0-100 con categoría Bajo/Medio/Alto/Crítico. Factores positivos y negativos documentados. Re-score por nueva documentación.</p>
+        </div>
+        <div class="modulo-card reveal reveal-delay-2">
+          <div class="modulo-icon">💰</div>
+          <h3>Capacidad Operativa</h3>
+          <p>Límites por operación, diario y mensual con justificación normativa. Vigencia temporal y restricciones especiales.</p>
+        </div>
+        <div class="modulo-card reveal reveal-delay-3">
+          <div class="modulo-icon">📋</div>
+          <h3>Informes y Dictámenes</h3>
+          <p>Informe web navegable + exportación PDF profesional. Incluye overrides, notas del CO y trazabilidad completa.</p>
+        </div>
+        <div class="modulo-card reveal reveal-delay-4">
+          <div class="modulo-icon">🔒</div>
+          <h3>Auditoría Inmutable</h3>
+          <p>Log de quién, qué, cuándo y resultado por cada acción del sistema. Historial de versiones de score e informes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ NORMATIVA ═══ -->
+  <section id="normativa" class="section section-normativa">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Marco regulatorio</span>
+        <h2 class="section-title">Construido sobre la normativa<br />argentina vigente</h2>
+        <p class="section-sub">Cada regla del motor está respaldada por normativa específica. Y cuando la regulación cambia, el motor se actualiza sin nuevo deployment.</p>
+      </div>
+      <div class="normativa-grid">
+        <div class="normativa-card reveal">
+          <div class="norm-header">
+            <div class="norm-logo uif">UIF</div>
+            <div class="norm-title">
+              <strong>Unidad de Información Financiera</strong>
+              <span>Res. 30/2017 · 156/2018 · 76/2019 y modificatorias</span>
+            </div>
+          </div>
+          <ul class="norm-items">
+            <li>Debida diligencia del cliente (DDC)</li>
+            <li>Identificación y verificación de PEP</li>
+            <li>Matrices de riesgo para PSPs y PSAVs</li>
+            <li>Onboarding y actualización de datos</li>
+          </ul>
+        </div>
+        <div class="normativa-card reveal reveal-delay-1">
+          <div class="norm-header">
+            <div class="norm-logo bcra">BCRA</div>
+            <div class="norm-title">
+              <strong>Banco Central de la República Argentina</strong>
+              <span>Com. A 6859 · 7429 · 7526</span>
+            </div>
+          </div>
+          <ul class="norm-items">
+            <li>Límites operativos para PSPs</li>
+            <li>Prevención de LA/FT en el sistema financiero</li>
+            <li>Marco regulatorio de activos virtuales</li>
+            <li>Requisitos KYC para apertura de cuenta</li>
+          </ul>
+        </div>
+        <div class="normativa-card reveal reveal-delay-2">
+          <div class="norm-header">
+            <div class="norm-logo arca">ARCA</div>
+            <div class="norm-title">
+              <strong>ARCA (ex AFIP)</strong>
+              <span>Validación fiscal y categorial</span>
+            </div>
+          </div>
+          <ul class="norm-items">
+            <li>Validación de CUIT/CUIL</li>
+            <li>Categorías fiscales: monotributo / RI / empleador</li>
+            <li>Constancias de inscripción online</li>
+            <li>Consistencia de actividad declarada</li>
+          </ul>
+        </div>
+        <div class="normativa-card reveal reveal-delay-3">
+          <div class="norm-header">
+            <div class="norm-logo gafi">GAFI</div>
+            <div class="norm-title">
+              <strong>Grupo de Acción Financiera Internacional</strong>
+              <span>40 Recomendaciones · EBR</span>
+            </div>
+          </div>
+          <ul class="norm-items">
+            <li>Enfoque Basado en Riesgo (EBR)</li>
+            <li>Rec. 10 — Debida diligencia del cliente</li>
+            <li>Rec. 15 — Nuevas tecnologías y VA</li>
+            <li>Metodología MONEYVAL compatible</li>
+          </ul>
+        </div>
+      </div>
+      <div class="normativa-note reveal">
+        <span>🔄</span>
+        <p>El motor de reglas de Merlin es configurable en base de datos. <strong>Cuando la UIF o el BCRA publican una nueva resolución, la regla se actualiza sin necesidad de un nuevo deployment.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ PARA QUIÉN ═══ -->
+  <section id="para-quien" class="section section-paraquien">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Verticales</span>
+        <h2 class="section-title">Diseñado para entidades que<br />operan en un entorno regulado</h2>
+      </div>
+      <div class="verticals-grid">
+        <div class="vertical-card reveal">
+          <div class="vertical-icon">🏦</div>
+          <h3>PSPs</h3>
+          <p>Proveedores de Servicios de Pago bajo normativa BCRA y UIF Res. 30/2017.</p>
+        </div>
+        <div class="vertical-card reveal reveal-delay-1">
+          <div class="vertical-icon">🪙</div>
+          <h3>Exchanges Cripto</h3>
+          <p>PSAVs (Proveedores de Servicios de Activos Virtuales) regulados por la UIF.</p>
+        </div>
+        <div class="vertical-card reveal reveal-delay-2">
+          <div class="vertical-icon">📉</div>
+          <h3>ALyCs</h3>
+          <p>Agentes de Liquidación y Compensación bajo normativa CNV con stack UIF.</p>
+        </div>
+        <div class="vertical-card reveal reveal-delay-3">
+          <div class="vertical-icon">💱</div>
+          <h3>OTC Desks</h3>
+          <p>Mesas de cambio y operaciones bilaterales con requerimientos de KYC reforzado.</p>
+        </div>
+        <div class="vertical-card reveal reveal-delay-4">
+          <div class="vertical-icon">💳</div>
+          <h3>Fintechs</h3>
+          <p>Plataformas financieras con procesos de onboarding digital a escala.</p>
+        </div>
+      </div>
+      <div class="roles-section reveal">
+        <h3 class="roles-title">Roles del sistema</h3>
+        <div class="roles-table">
+          <div class="role-row header">
+            <span>Rol</span>
+            <span>Qué hace en Merlin</span>
+          </div>
+          <div class="role-row">
+            <span class="role-name"><span class="role-dot analyst"></span>Analista KYC/KYB</span>
+            <span>Crea expedientes, carga documentos, revisa campos extraídos</span>
+          </div>
+          <div class="role-row">
+            <span class="role-name"><span class="role-dot co"></span>Oficial de Cumplimiento</span>
+            <span>Revisa dictámenes, aprueba/rechaza/subsana, realiza overrides</span>
+          </div>
+          <div class="role-row">
+            <span class="role-name"><span class="role-dot senior"></span>Compliance Officer Senior</span>
+            <span>Vista ejecutiva, overrides especiales, configuración de parámetros</span>
+          </div>
+          <div class="role-row">
+            <span class="role-name"><span class="role-dot auditor"></span>Auditor Interno/Externo</span>
+            <span>Solo lectura — acceso completo al historial inmutable</span>
+          </div>
+          <div class="role-row">
+            <span class="role-name"><span class="role-dot admin"></span>Administrador</span>
+            <span>Gestiona usuarios, reglas, parámetros globales del sistema</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ DIFERENCIADORES ═══ -->
+  <section id="diferenciadores" class="section section-dif">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Por qué Merlin</span>
+        <h2 class="section-title">No es otro software de compliance.<br />Es una categoría diferente.</h2>
+      </div>
+      <div class="dif-grid">
+        <div class="dif-card reveal">
+          <div class="dif-num">01</div>
+          <div class="dif-icon">💡</div>
+          <h3>IA Explicable. No caja negra.</h3>
+          <p>Cada decisión puede ser leída, entendida y cuestionada por cualquier auditor externo. La lógica regulatoria es siempre visible, campo por campo. Si la UIF pregunta, tenés respuesta.</p>
+        </div>
+        <div class="dif-card reveal reveal-delay-1">
+          <div class="dif-num">02</div>
+          <div class="dif-icon">🤝</div>
+          <h3>El humano siempre decide.</h3>
+          <p>El Oficial de Cumplimiento es el decisor final en cada punto crítico. Merlin prepara el análisis con toda la evidencia — la responsabilidad y el criterio siguen siendo humanos.</p>
+        </div>
+        <div class="dif-card reveal reveal-delay-2">
+          <div class="dif-num">03</div>
+          <div class="dif-icon">⚡</div>
+          <h3>Reglas sin código.</h3>
+          <p>Cuando la UIF publica una nueva resolución, la regla se actualiza en la base de datos — sin depender de un proveedor, sin esperar un release, sin riesgo de incumplimiento en el ínterin.</p>
+        </div>
+        <div class="dif-card reveal reveal-delay-3">
+          <div class="dif-num">04</div>
+          <div class="dif-icon">🔒</div>
+          <h3>Trazabilidad total desde el día uno.</h3>
+          <p>Cada acción, corrección, override y aprobación queda registrada con usuario, timestamp, estado anterior y nuevo. El log es inmutable. Sin excepciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ TESTIMONIOS ═══ -->
+  <section id="testimonios" class="section section-testimonios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Lo que dicen</span>
+        <h2 class="section-title">Entidades que ya trabajan<br />con Merlin</h2>
+      </div>
+      <div class="testimonios-grid">
+        <div class="testimonio-card reveal">
+          <div class="testimonio-stars">★★★★★</div>
+          <p class="testimonio-text">"Merlin nos permitió estandarizar el proceso de onboarding que antes dependía 100% del criterio del analista. Hoy tenemos dictámenes consistentes y un log de auditoría que cualquier inspector de la UIF puede leer sin contexto adicional."</p>
+          <div class="testimonio-author">
+            <div class="testimonio-avatar">DC</div>
+            <div>
+              <strong>Directora de Compliance</strong>
+              <span>Exchange de Criptoactivos · Buenos Aires</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card reveal reveal-delay-1">
+          <div class="testimonio-stars">★★★★★</div>
+          <p class="testimonio-text">"Lo que más valoro de Merlin es que la IA no toma decisiones: las prepara. Nosotros seguimos siendo los responsables, pero con todo el trabajo analítico hecho en minutos en lugar de horas. Es como tener un analista senior 24/7."</p>
+          <div class="testimonio-author">
+            <div class="testimonio-avatar">MR</div>
+            <div>
+              <strong>Oficial de Cumplimiento</strong>
+              <span>PSP regulado · Ciudad Autónoma de Buenos Aires</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card reveal reveal-delay-2">
+          <div class="testimonio-stars">★★★★★</div>
+          <p class="testimonio-text">"El motor de reglas de Merlin es lo que buscábamos desde hace años. Cuando salió la última resolución de la UIF, actualizamos la regla en el día — sin esperar a ningún proveedor y sin riesgo de incumplimiento."</p>
+          <div class="testimonio-author">
+            <div class="testimonio-avatar">AG</div>
+            <div>
+              <strong>Chief Compliance Officer</strong>
+              <span>Fintech · Rosario, Argentina</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ ACCESO ═══ -->
+  <section id="acceso" class="section section-acceso">
+    <div class="container">
+      <div class="acceso-wrapper">
+        <div class="acceso-header reveal">
+          <span class="badge badge-glow">🚀 Programa de Acceso Anticipado</span>
+          <h2 class="section-title" style="text-align:left">Sé parte de las primeras entidades<br />en operar con Merlin</h2>
+          <p class="section-sub" style="text-align:left">Estamos seleccionando entidades para el programa de Early Access. Los cupos son limitados. Completá el formulario y te contactamos en menos de 48 horas.</p>
+          <div class="acceso-promises">
+            <div class="promise">✓ Onboarding guiado por el equipo</div>
+            <div class="promise">✓ Configuración de reglas para tu normativa</div>
+            <div class="promise">✓ Acceso prioritario a nuevas funcionalidades</div>
+          </div>
+        </div>
+        <form class="acceso-form reveal reveal-delay-1" id="acceso-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre y Apellido *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa *</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Ej: FinTech Pagos SA" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cargo">Cargo *</label>
+              <input type="text" id="cargo" name="cargo" placeholder="Ej: Chief Compliance Officer" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email corporativo *</label>
+              <input type="email" id="email" name="email" placeholder="juan@empresa.com.ar" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tipo">Tipo de entidad *</label>
+              <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>Seleccioná tu tipo de entidad</option>
+                <option value="PSP">PSP (Proveedor de Servicios de Pago)</option>
+                <option value="PSAV">PSAV / Exchange de Criptoactivos</option>
+                <option value="ALyC">ALyC</option>
+                <option value="OTC">OTC Desk</option>
+                <option value="Fintech">Fintech</option>
+                <option value="Banco">Banco / Entidad Financiera</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="volumen">Casos de onboarding por mes *</label>
+              <select id="volumen" name="volumen" required>
+                <option value="" disabled selected>Volumen estimado</option>
+                <option value="1-20">1 a 20 casos</option>
+                <option value="21-100">21 a 100 casos</option>
+                <option value="101-500">101 a 500 casos</option>
+                <option value="500+">Más de 500 casos</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <label for="problema">¿Qué problema querés resolver con Merlin?</label>
+            <textarea id="problema" name="problema" rows="4" placeholder="Contanos brevemente tu proceso actual de compliance y qué buscás mejorar..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full" id="submit-btn">
+            <span id="submit-text">Quiero acceso anticipado</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p class="form-disclaimer">Al enviar este formulario aceptás que el equipo de Merlin se contacte con vos para coordinar el onboarding. No spam, nunca.</p>
+        </form>
+        <div class="form-success" id="form-success" style="display:none">
+          <div class="success-icon">🎉</div>
+          <h3>¡Solicitud recibida!</h3>
+          <p>Nos contactamos con vos en las próximas 48 horas para coordinar el onboarding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-icon">🔮</span>
+          <span class="logo-text">Merlin</span>
+          <span class="logo-badge">RegTech</span>
+        </div>
+        <p>La plataforma de compliance normativo con IA diseñada para el mercado argentino.</p>
+        <div class="footer-badges">
+          <span class="badge badge-outline small">UIF</span>
+          <span class="badge badge-outline small">BCRA</span>
+          <span class="badge badge-outline small">GAFI</span>
+          <span class="badge badge-outline small">ARCA</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#modulos">Módulos</a></li>
+            <li><a href="#normativa">Normativa</a></li>
+            <li><a href="#para-quien">Para quién</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Verticales</h4>
+          <ul>
+            <li><a href="#para-quien">PSPs</a></li>
+            <li><a href="#para-quien">Exchanges Cripto</a></li>
+            <li><a href="#para-quien">ALyCs</a></li>
+            <li><a href="#para-quien">Fintechs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="#acceso">Solicitar Demo</a></li>
+            <li><a href="mailto:hola@merlin.com.ar">hola@merlin.com.ar</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Merlin RegTech — Buenos Aires, Argentina · <a href="#">Términos</a> · <a href="#">Privacidad</a></p>
+        <p class="footer-tech">Construido con IA para el mercado regulado argentino</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

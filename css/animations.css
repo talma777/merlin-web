@@ -1,0 +1,226 @@
+/* ═══════════════════════════════════════════════════════════
+   MERLIN REGTECH — Animations
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Keyframes ─────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  33%       { transform: translateY(-20px) translateX(8px); }
+  66%       { transform: translateY(10px) translateX(-5px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 12px rgba(0, 212, 255, 0.2); }
+  50%       { box-shadow: 0 0 24px rgba(0, 212, 255, 0.5); }
+}
+
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes border-glow {
+  0%, 100% { border-color: rgba(0, 212, 255, 0.12); }
+  50%       { border-color: rgba(0, 212, 255, 0.35); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── Scroll Reveal ─────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ── Stepper transition ────────────────────────────────── */
+.step-panel {
+  animation: fade-in 0.35s ease forwards;
+}
+
+/* ── Chain nodes hover ─────────────────────────────────── */
+.chain-node {
+  animation: none;
+}
+.chain-container:hover .chain-node {
+  animation: border-glow 2s ease-in-out infinite;
+}
+
+/* ── Mock score ring animation ─────────────────────────── */
+.mock-score-ring circle:last-child {
+  transition: stroke-dashoffset 1.5s ease;
+}
+
+/* ── Subtle nav link underline ─────────────────────────── */
+.nav-links a {
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 14px;
+  right: 14px;
+  height: 1px;
+  background: var(--cyan);
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+.nav-links a:hover::after { transform: scaleX(1); }
+
+/* ── btn shimmer ───────────────────────────────────────── */
+.btn-primary {
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    90deg,
+    var(--violet) 0%,
+    var(--cyan) 50%,
+    var(--violet) 100%
+  );
+  animation: gradient-shift 4s ease infinite;
+}
+
+/* ── Problema card entrance ────────────────────────────── */
+.problema-card.visible {
+  animation: scale-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ── Mockup entrance ───────────────────────────────────── */
+.hero-mockup.visible {
+  animation: scale-in 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
+}
+
+/* ── Modulo card hover shine ───────────────────────────── */
+.modulo-card {
+  overflow: hidden;
+}
+.modulo-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(0, 212, 255, 0.04) 50%,
+    transparent 70%
+  );
+  transform: translateX(-100%) translateY(-100%);
+  transition: transform 0.5s ease;
+}
+.modulo-card:hover::before {
+  transform: translateX(50%) translateY(50%);
+}
+
+/* ── Vertical card hover pulse ─────────────────────────── */
+.vertical-card:hover .vertical-icon {
+  animation: float 1.5s ease-in-out infinite;
+}
+
+/* ── Form focus ring animation ─────────────────────────── */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ── Success animation ─────────────────────────────────── */
+.form-success {
+  animation: scale-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.success-icon {
+  animation: float 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* ── Hero orb continuous ───────────────────────────────── */
+.orb-1 { animation: float 10s ease-in-out infinite 0s; }
+.orb-2 { animation: float 14s ease-in-out infinite -4s; }
+.orb-3 { animation: float 12s ease-in-out infinite -8s; }
+
+/* ── Stat count-up effect ──────────────────────────────── */
+.stat-num {
+  animation: count-up 0.6s ease forwards;
+}
+
+/* ── Chain highlight pulse ─────────────────────────────── */
+.chain-node.highlight {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+/* ── reduce motion ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
