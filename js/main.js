@@ -64,22 +64,42 @@ const stepperObs = new IntersectionObserver((entries) => {
 
 if (stepperEl) stepperObs.observe(stepperEl);
 
-// ── Form submission ────────────────────────────────────────
-function handleFormSubmit(e) {
+// ── Form submission — Formspree real ──────────────────────
+async function handleFormSubmit(e) {
   e.preventDefault();
 
-  const btn = document.getElementById('submit-btn');
+  const form = document.getElementById('acceso-form');
+  const btn  = document.getElementById('submit-btn');
   const text = document.getElementById('submit-text');
 
   // Loading state
   btn.disabled = true;
   text.textContent = 'Enviando...';
 
-  // Simulate async (mock)
-  setTimeout(() => {
-    document.getElementById('acceso-form').style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
-  }, 1200);
+  const data = new FormData(form);
+
+  try {
+    const res = await fetch('https://formspree.io/f/xkoqpaap', {
+      method:  'POST',
+      body:    data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      form.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    } else {
+      const json = await res.json();
+      const msg  = json?.errors?.map(e => e.message).join(', ') || 'Error al enviar. Intentá de nuevo.';
+      text.textContent = 'Quiero acceso anticipado';
+      btn.disabled = false;
+      alert('❌ ' + msg);
+    }
+  } catch (err) {
+    text.textContent = 'Quiero acceso anticipado';
+    btn.disabled = false;
+    alert('❌ Error de conexión. Revisá tu internet e intentá de nuevo.');
+  }
 }
 
 // ── Active nav link on scroll ──────────────────────────────
