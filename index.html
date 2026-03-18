@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animations.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%230057D9'/><stop offset='100%25' stop-color='%230B8A7A'/></linearGradient></defs><path d='M18 2L32 10V26L18 34L4 26V10Z' fill='url(%23g)'/><path d='M18 2L32 10L18 18L4 10Z' fill='rgba(255,255,255,0.18)'/><text x='18' y='23' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='13' fill='white'>M</text></svg>" />
 </head>
 <body>
 
@@ -22,16 +22,32 @@
   <nav id="nav" class="nav">
     <div class="nav-inner container">
       <a href="#" class="nav-logo" id="nav-logo">
-        <span class="logo-icon">🔮</span>
-        <span class="logo-text">Merlin</span>
-        <span class="logo-badge">RegTech</span>
+        <span class="logo-mark">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#0057D9"/>
+                <stop offset="100%" stop-color="#0B8A7A"/>
+              </linearGradient>
+            </defs>
+            <path d="M18 2L32 10V26L18 34L4 26V10Z" fill="url(#logoGrad)"/>
+            <path d="M18 2L32 10L18 18L4 10Z" fill="rgba(255,255,255,0.18)"/>
+            <path d="M18 18L32 10V26Z" fill="rgba(255,255,255,0.08)"/>
+            <text x="18" y="23" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="13" fill="white">M</text>
+          </svg>
+        </span>
+        <span class="logo-wordgroup">
+          <span class="logo-name">Merlin</span>
+          <span class="logo-sub">RegTech</span>
+        </span>
       </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#como-funciona">Cómo funciona</a></li>
-        <li><a href="#modulos">Módulos</a></li>
-        <li><a href="#normativa">Normativa</a></li>
-        <li><a href="#para-quien">Para quién</a></li>
-      </ul>
+      <nav class="nav-links" id="nav-links">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#normativa">Normativa</a>
+        <a href="#para-quien">Para quién</a>
+        <a href="#diferenciadores">Por qué Merlin</a>
+      </nav>
       <a href="#acceso" class="btn btn-primary nav-cta">Solicitar Demo</a>
       <button class="nav-hamburger" id="hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
@@ -41,40 +57,41 @@
 
   <!-- ═══════════════════════════════════════════════ HERO ════ -->
   <section id="hero" class="hero">
-    <div class="hero-bg">
-      <div class="hero-mesh"></div>
-      <div class="hero-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-      </div>
-      <div class="hero-grid"></div>
-    </div>
     <div class="container hero-content">
-      <div class="hero-badges reveal">
-        <span class="badge badge-outline">🇦🇷 Mercado Argentino</span>
-        <span class="badge badge-outline">🛡️ UIF · BCRA · GAFI · ARCA</span>
-        <span class="badge badge-glow">Acceso Anticipado Disponible</span>
+      <div class="hero-left">
+        <div class="hero-badges reveal">
+          <span class="badge badge-navy">🇦🇷 Mercado Argentino</span>
+          <span class="badge badge-teal">UIF · BCRA · GAFI · ARCA</span>
+          <span class="badge badge-teal badge-pulse">● Acceso Anticipado Disponible</span>
+        </div>
+        <h1 class="hero-headline reveal reveal-delay-1">
+          Del expediente<br />
+          <span style="color:var(--blue-600)">al dictamen en minutos.</span>
+        </h1>
+        <p class="hero-sub reveal reveal-delay-2">
+          Merlin es la plataforma RegTech con IA que automatiza el proceso de compliance KYC/KYB para entidades financieras reguladas en Argentina. <strong>Trazable, auditable</strong> y con revisión humana en cada decisión crítica.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="#acceso" class="btn btn-primary btn-lg">
+            Solicitar Acceso Anticipado
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#como-funciona" class="btn btn-outline btn-lg">
+            Ver cómo funciona
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+        </div>
+        <div class="hero-trust reveal reveal-delay-4">
+          <span class="trust-label">Normativa cubierta</span>
+          <div class="trust-badges">
+            <span class="trust-badge">UIF</span>
+            <span class="trust-badge">BCRA</span>
+            <span class="trust-badge">GAFI</span>
+            <span class="trust-badge">ARCA</span>
+          </div>
+        </div>
       </div>
-      <h1 class="hero-headline reveal reveal-delay-1">
-        Del expediente<br />
-        <span class="gradient-text">al dictamen en minutos.</span>
-      </h1>
-      <p class="hero-sub reveal reveal-delay-2">
-        Merlin es la plataforma RegTech con IA que automatiza el proceso de compliance KYC/KYB 
-        para entidades financieras reguladas en Argentina. <strong>Trazable, auditable</strong> 
-        y con revisión humana en cada decisión crítica.
-      </p>
-      <div class="hero-actions reveal reveal-delay-3">
-        <a href="#acceso" class="btn btn-primary btn-lg">
-          <span>Solicitar Acceso Anticipado</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="#como-funciona" class="btn btn-ghost btn-lg">
-          Ver cómo funciona
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-        </a>
-      </div>
+      <div class="hero-right">
       <div class="hero-mockup reveal reveal-delay-4">
         <div class="mockup-frame">
           <div class="mockup-topbar">
@@ -173,34 +190,48 @@
             </div>
           </div>
         </div>
-        <div class="mockup-glow"></div>
       </div>
-      <div class="hero-stats reveal reveal-delay-5">
-        <div class="stat">
-          <div class="stat-num">< 5 min</div>
-          <div class="stat-label">Por caso completo</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <div class="stat-num">100%</div>
-          <div class="stat-label">Trazable y auditable</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <div class="stat-num">40+</div>
-          <div class="stat-label">Reglas UIF/BCRA</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <div class="stat-num">0</div>
-          <div class="stat-label">Caja negra. Siempre explicable.</div>
-        </div>
+    </div>
+    <div class="container">
+      <div class="hero-stats reveal">
+        <div class="stat-item"><div class="stat-num">&lt;5 min</div><div class="stat-label">Por caso completo</div></div>
+        <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Trazable y auditable</div></div>
+        <div class="stat-item"><div class="stat-num">40+</div><div class="stat-label">Reglas UIF/BCRA</div></div>
+        <div class="stat-item"><div class="stat-num">0</div><div class="stat-label">Decisiones de caja negra</div></div>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════════════ PROBLEMA ═══ -->
-  <section id="problema" class="section section-problema">
+  <section id="problema" class="section bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">El problema</span>
+        <h2 class="section-title">El compliance sin tecnología<br />es el cuello de botella de tu operación</h2>
+        <p class="section-sub">Las entidades financieras reguladas enfrentan tres fricciones críticas que ningún proceso manual puede resolver a escala.</p>
+      </div>
+      <div class="problema-grid">
+        <div class="problema-card reveal reveal-delay-1">
+          <div class="problema-icon red"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div class="problema-stat stat-red">+4 horas</div>
+          <h3>Manual y no escalable</h3>
+          <p>Cada caso de onboarding KYC/KYB consume horas de trabajo analítico sin estandarización. A mayor volumen, mayor riesgo operativo y mayor costo.</p>
+        </div>
+        <div class="problema-card reveal reveal-delay-2">
+          <div class="problema-icon amber"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M7 21h10M12 3v18M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></div>
+          <div class="problema-stat stat-amber">Criterio variable</div>
+          <h3>Inconsistente y no documentado</h3>
+          <p>Sin un motor de reglas, cada decisión depende del analista de turno. Los criterios varían, los argumentos no quedan documentados y la responsabilidad queda difusa.</p>
+        </div>
+        <div class="problema-card reveal reveal-delay-3">
+          <div class="problema-icon navy"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+          <div class="problema-stat stat-navy">Riesgo regulatorio</div>
+          <h3>No auditable ante la UIF</h3>
+          <p>La falta de trazabilidad en las decisiones de compliance pone a la entidad en riesgo frente a cualquier inspección. Sin log, sin defensa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">El problema</span>
@@ -230,8 +261,36 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════ SOLUCIÓN ═══ -->
-  <section id="solucion" class="section section-solucion">
+  <section id="solucion" class="section bg-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">La solución</span>
+        <h2 class="section-title">Una cadena de valor end-to-end<br />para tu proceso de compliance</h2>
+        <p class="section-sub">Merlin convierte documentos en decisiones regulatorias justificadas, manteniendo al Oficial de Cumplimiento como decisor final.</p>
+      </div>
+      <div class="chain-wrapper reveal">
+        <div class="chain-scroll">
+          <div class="chain-node"><div class="chain-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div><div class="chain-label">Documento</div></div>
+          <div class="chain-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="chain-node"><div class="chain-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M9 2v2M15 20v2M9 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><div class="chain-label">Extracción IA</div></div>
+          <div class="chain-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="chain-node"><div class="chain-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="chain-label">Perfilamiento</div></div>
+          <div class="chain-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="chain-node"><div class="chain-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div><div class="chain-label">Motor Reglas</div></div>
+          <div class="chain-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="chain-node"><div class="chain-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="chain-label">Screening AML</div></div>
+          <div class="chain-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="chain-node"><div class="chain-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><div class="chain-label">Score + Límites</div></div>
+          <div class="chain-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="chain-node final"><div class="chain-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div class="chain-label">Dictamen Auditable</div></div>
+        </div>
+      </div>
+      <div class="human-loop-banner reveal">
+        <div class="hlb-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div class="hlb-text"><strong>Human-in-the-loop en cada punto crítico</strong><span>El Oficial de Cumplimiento revisa, corrige y toma la decisión final. La IA acelera el análisis — no lo reemplaza.</span></div>
+      </div>
+    </div>
+  </section>
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">La solución</span>
@@ -420,8 +479,26 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════ MÓDULOS ═══ -->
-  <section id="modulos" class="section section-modulos">
+  <section id="modulos" class="section bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Plataforma</span>
+        <h2 class="section-title">Nueve módulos especializados.<br />Un flujo integrado.</h2>
+        <p class="section-sub">Cada módulo resuelve una parte específica del proceso de compliance. Juntos forman una cadena completa y auditable.</p>
+      </div>
+      <div class="modulos-grid">
+        <div class="modulo-card reveal"><div class="modulo-icon-wrap mi-1"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg></div><h3>Gestión de Expedientes</h3><p>Estados, checklist documental, transiciones y ciclo de vida completo del caso desde borrador hasta cierre.</p></div>
+        <div class="modulo-card reveal reveal-delay-1"><div class="modulo-icon-wrap mi-2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M9 2v2M15 20v2M9 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><h3>Extracción Inteligente</h3><p>OCR + LLM con Gemini Vision. Score de confianza por campo. Corrección manual con trazabilidad completa.</p></div>
+        <div class="modulo-card reveal reveal-delay-2"><div class="modulo-icon-wrap mi-3"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Perfilamiento KYC/KYB</h3><p>Perfil consolidado para PH y PJ. Perfil de identidad, actividad económica y patrimonial. Alertas de consistencia.</p></div>
+        <div class="modulo-card reveal reveal-delay-1"><div class="modulo-icon-wrap mi-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div><h3>Motor de Reglas</h3><p>40+ reglas configurables UIF/BCRA sin deploy. Encendido/apagado por regla. Severidad y peso configurable.</p></div>
+        <div class="modulo-card reveal reveal-delay-2"><div class="modulo-icon-wrap mi-5"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Screening AML</h3><p>Verificación contra listas PEP, OFAC y Naciones Unidas. Flags por tipologías de riesgo. Resultado impacta score.</p></div>
+        <div class="modulo-card reveal reveal-delay-3"><div class="modulo-icon-wrap mi-6"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h3>Scoring de Riesgo</h3><p>Score 0-100 con categoría Bajo/Medio/Alto/Crítico. Factores positivos y negativos documentados.</p></div>
+        <div class="modulo-card reveal reveal-delay-2"><div class="modulo-icon-wrap mi-7"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg></div><h3>Capacidad Operativa</h3><p>Límites por operación, diario y mensual con justificación normativa. Vigencia temporal y restricciones especiales.</p></div>
+        <div class="modulo-card reveal reveal-delay-3"><div class="modulo-icon-wrap mi-8"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Informes y Dictámenes</h3><p>Informe web navegable + exportación PDF profesional. Incluye overrides, notas del CO y trazabilidad completa.</p></div>
+        <div class="modulo-card reveal reveal-delay-4"><div class="modulo-icon-wrap mi-9"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><h3>Auditoría Inmutable</h3><p>Log de quién, qué, cuándo y resultado por cada acción del sistema. Historial de versiones de score e informes.</p></div>
+      </div>
+    </div>
+  </section>
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">Plataforma</span>
@@ -621,8 +698,36 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════ DIFERENCIADORES ═══ -->
-  <section id="diferenciadores" class="section section-dif">
+  <section id="diferenciadores" class="section bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Por qué Merlin</span>
+        <h2 class="section-title">No es otro software de compliance.<br />Es una categoría diferente.</h2>
+      </div>
+      <div class="dif-grid">
+        <div class="dif-card reveal">
+          <div class="dif-num">01</div>
+          <div class="dif-head"><div class="dif-icon-wrap di-1"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21h6M12 2v1M4.6 4.6l.7.7M2 12h1M20 12h1m-2.3-7.4.7-.7"/><path d="M15 7a5 5 0 00-6.9 7.2C8.8 15 10 16.2 10 17v1h4v-1c0-.8 1.2-2 1.9-2.8A5 5 0 0015 7z"/></svg></div><h3>IA Explicable. No caja negra.</h3></div>
+          <p>Cada decisión puede ser leída y cuestionada por cualquier auditor externo. La lógica regulatoria es siempre visible, campo por campo. Si la UIF pregunta, tenés respuesta.</p>
+        </div>
+        <div class="dif-card reveal reveal-delay-1">
+          <div class="dif-num">02</div>
+          <div class="dif-head"><div class="dif-icon-wrap di-2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><h3>El humano siempre decide.</h3></div>
+          <p>El Oficial de Cumplimiento es el decisor final en cada punto crítico. Merlin prepara el análisis con toda la evidencia — la responsabilidad y el criterio siguen siendo humanos.</p>
+        </div>
+        <div class="dif-card reveal reveal-delay-2">
+          <div class="dif-num">03</div>
+          <div class="dif-head"><div class="dif-icon-wrap di-3"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Reglas sin código.</h3></div>
+          <p>Cuando la UIF publica una nueva resolución, la regla se actualiza en la base de datos — sin depender de un proveedor, sin esperar un release, sin riesgo de incumplimiento en el ínterin.</p>
+        </div>
+        <div class="dif-card reveal reveal-delay-3">
+          <div class="dif-num">04</div>
+          <div class="dif-head"><div class="dif-icon-wrap di-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><h3>Trazabilidad total desde el día uno.</h3></div>
+          <p>Cada acción, corrección, override y aprobación queda registrada con usuario, timestamp, estado anterior y nuevo. El log es inmutable. Sin excepciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">Por qué Merlin</span>
@@ -785,17 +890,16 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="nav-logo">
-          <span class="logo-icon">🔮</span>
-          <span class="logo-text">Merlin</span>
-          <span class="logo-badge">RegTech</span>
+        <div class="footer-logo nav-logo">
+          <span class="logo-mark"><svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="fg" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0057D9"/><stop offset="100%" stop-color="#0B8A7A"/></linearGradient></defs><path d="M18 2L32 10V26L18 34L4 26V10Z" fill="url(#fg)"/><path d="M18 2L32 10L18 18L4 10Z" fill="rgba(255,255,255,0.18)"/><text x="18" y="23" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="13" fill="white">M</text></svg></span>
+          <span class="logo-wordgroup"><span class="logo-name" style="color:#fff">Merlin</span><span class="logo-sub">RegTech</span></span>
         </div>
         <p>La plataforma de compliance normativo con IA diseñada para el mercado argentino.</p>
-        <div class="footer-badges">
-          <span class="badge badge-outline small">UIF</span>
-          <span class="badge badge-outline small">BCRA</span>
-          <span class="badge badge-outline small">GAFI</span>
-          <span class="badge badge-outline small">ARCA</span>
+        <div class="footer-trust">
+          <span class="footer-trust-badge">UIF</span>
+          <span class="footer-trust-badge">BCRA</span>
+          <span class="footer-trust-badge">GAFI</span>
+          <span class="footer-trust-badge">ARCA</span>
         </div>
       </div>
       <div class="footer-links">
